@@ -1,0 +1,130 @@
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    //min-height: 100vh;
+    &__header{
+        width: 100%;
+        height: 50px;
+        background: #28b4e6;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    }
+    &__content{
+        margin-top: 10px;
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+
+        .hello{
+            width: 800px;
+            // border: 5px solid #28b4e6;
+            padding: 20px 0;
+            border-radius: 25px;
+            min-height: 400px;
+            background: #f3f3f3c2 url('../img/dominospizza.jpg');
+            background-blend-mode: color;   
+            background-size:cover;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+
+            .header{
+                height: 100px;
+                font-size: 2.5em;
+            }
+            .description{
+                font-size: 1.5em;
+                padding: 0 5px;
+            }
+            .buttons{
+                display: flex;
+                justify-content: center;
+                
+                .button{
+                    cursor: pointer;
+                    height: 50px;
+                    width: 200px;
+                    background-color: #28b4e6;
+                    font-size: 1.5em;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50px;
+                    color: #000;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+                    transition: background-color, box-shadow 200ms linear;
+
+                    &:hover{
+                        // background-color: #49cfff;
+                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 6px 20px 0 rgba(0, 0, 0, 0.0);
+                    }
+                }
+            }
+        }
+    }
+    .test-quastion{
+        margin: 20px;
+        font-size: 2em;
+    }
+
+    
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+    
+            li{
+               display: flex;
+               width: 100%;
+                height: 50px;
+                font-size: 1.6em;
+                padding: 0;
+                margin: 0;
+                cursor: pointer;
+                transition: background-color 100ms linear;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 2px solid #7d7d7d;
+    
+                &:hover{
+                    background-color: #fff;
+                    border-bottom: 2px solid #28b4e6;
+                }
+            }
+        }
+    }
+
+    .photo{
+        width:300px;
+        height: 400px;
+        border-radius: 20px;
+    }
+        
+    
+
+    .pushkin{
+        background: url('../img/pushkin.jpg') no-repeat;
+    }
+
+    .test-answer{
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .pizza{
+        font-size: 1.6em;
+    }
+    .hide{
+        display: none;
+    }
+}
