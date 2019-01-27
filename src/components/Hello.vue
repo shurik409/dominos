@@ -1,6 +1,7 @@
 <template>
 <div class='main'>
-  <div class="main__header"></div>
+  <div class="main__header">Domino's pizza</div>
+  <div class='logo'></div>
   <div class="main__content">
     <div class="hello">
       <div class='header'>{{ FullMessage }}</div>
